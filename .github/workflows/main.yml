@@ -14,3 +14,8 @@ jobs:
         run: |
           echo "Fisrt workflow created"
           echo "Congratulations"
+      - name:
+        run: |
+          variavel = "Hello World again"
+          print(variavel)
+        shell: python
