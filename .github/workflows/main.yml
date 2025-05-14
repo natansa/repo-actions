@@ -1,0 +1,16 @@
+name: one-pipe
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  first-job:
+    name: "Fisrt Job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Fisrt Action"
+        run: echo "Hello World"
+      - name: "Second Action"
+        run: |
+          echo "Fisrt workflow created"
+          echo "Congratulations"
