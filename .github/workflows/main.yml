@@ -19,3 +19,9 @@ jobs:
           variavel = "Hello World again"
           print(variavel)
         shell: python
+  second-job:
+      name: "Second Job"
+      runs-on: ubuntu-latest
+      steps:
+        - name: "Verify Node version"
+          run: node --version
