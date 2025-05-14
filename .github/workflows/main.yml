@@ -25,3 +25,9 @@ jobs:
       steps:
         - name: "Verify Node version"
           run: node --version
+        - name: "Update Node to 22.15.0"
+          uses: actions/setup-node@v4
+          with:
+            node-version: 22.15.0
+        - name: "Verify Node version again"
+          run: node --version
